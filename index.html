@@ -640,7 +640,7 @@ const FIXTURE_DATA = [
 // Flatten fixtures with stable ids
 const FIXTURES = [];
 FIXTURE_DATA.forEach(([date, matches]) => {
-  matches.forEach(([t1,t2]) => {it
+  matches.forEach(([t1,t2]) => {
     FIXTURES.push({ id: `${date}__${t1}__${t2}`.replace(/\s+/g,'_'), date, t1, t2 });
   });
 });
